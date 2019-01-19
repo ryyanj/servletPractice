@@ -13,8 +13,8 @@ public class HelloServlet extends HttpServlet {
 
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    RequestDispatcher view =req.getRequestDispatcher("src/main/resources/index.html");
-    view.include(req, resp);
+    RequestDispatcher view =req.getRequestDispatcher("resources/index.html");
+    view.forward(req, resp);
   }
 
 
