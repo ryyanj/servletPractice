@@ -18,7 +18,7 @@ public class HelloServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        String username = req.getParameter("username");
         RequestDispatcher view =req.getRequestDispatcher("index.html");
         view.include(req, resp);
     }

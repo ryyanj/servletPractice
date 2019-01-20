@@ -9,9 +9,19 @@
   <servlet-class>com.ryyanj.servlets.HelloServlet</servlet-class>
 </servlet>
 
+  <servlet>
+    <servlet-name>GoodByeServlet</servlet-name>
+    <servlet-class>com.ryyanj.servlets.GoodByeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+
 <servlet-mapping>
-  <servlet-name>HelloServlet</servlet-name>
-  <url-pattern>/hello</url-pattern>
+  <servlet-name>GoodByeServlet</servlet-name>
+  <url-pattern>/goodbye</url-pattern>
 </servlet-mapping>
 
 </web-app>
