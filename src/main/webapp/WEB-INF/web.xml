@@ -2,26 +2,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         metadata-complete="false"
          version="3.1">
-
-<servlet>
-  <servlet-name>HelloServlet</servlet-name>
-  <servlet-class>com.ryyanj.servlets.HelloServlet</servlet-class>
-</servlet>
-
-  <servlet>
-    <servlet-name>GoodByeServlet</servlet-name>
-    <servlet-class>com.ryyanj.servlets.GoodByeServlet</servlet-class>
-  </servlet>
-
-  <servlet-mapping>
-    <servlet-name>HelloServlet</servlet-name>
-    <url-pattern>/hello</url-pattern>
-  </servlet-mapping>
-
-<servlet-mapping>
-  <servlet-name>GoodByeServlet</servlet-name>
-  <url-pattern>/goodbye</url-pattern>
-</servlet-mapping>
 
 </web-app>

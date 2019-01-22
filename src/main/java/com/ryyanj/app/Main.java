@@ -28,7 +28,7 @@ public class Main {
 
         // Declare an alternative location for your "WEB-INF/classes" dir
         // Servlet 3.0 annotation will work
-        File additionWebInfClasses = new File("build/libs");
+        File additionWebInfClasses = new File("build/classes");
         WebResourceRoot resources = new StandardRoot(ctx);
         //ctx.setAltDDName("build/libs/webdemo/WEB-INF/web.xml");
         resources.addPreResources(new DirResourceSet(resources, "/WEB-INF/classes",
